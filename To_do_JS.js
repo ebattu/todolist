@@ -5,8 +5,11 @@ app.controller("ctrl",['$scope',function($scope){
         $scope.tasks.push($scope.taskname);
         $scope.taskname='';
     }
+    
     $scope.removeTask = function(task){
         var index = $scope.tasks.indexOf(task);
         $scope.tasks.splice(index,1);
+
     }
+
 }])
